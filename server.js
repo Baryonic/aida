@@ -114,8 +114,10 @@ app.use(errorHandler);
 /*  Start                                                              */
 /* ------------------------------------------------------------------ */
 
-app.listen(PORT, () => {
+// Listen on all network interfaces (0.0.0.0) instead of just localhost
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🚀  AIDA server running at http://localhost:${PORT}`);
+  console.log(`    Network Access: http://${require('os').networkInterfaces()['Wi-Fi']?.[1]?.address || 'YOUR_IP'}:${PORT}`);
   console.log(`    Environment : ${process.env.NODE_ENV || 'development'}`);
   console.log(`    Database    : ${process.env.DB_PATH || './data/aida.db'}\n`);
 });
