@@ -66,7 +66,7 @@ const sampleBooks = [
     title: 'The Color Thief',
     slug: 'the-color-thief',
     author: 'Aida',
-    description: 'When all the colors vanish from the town, twins Maya and Max must find the mysterious Color Thief before it's too late.',
+    description: 'When all the colors vanish from the town, twins Maya and Max must find the mysterious Color Thief before it\'s too late.',
     long_description: 'One grey morning Maya and Max wake up to find that every color in their town of Paintville has disappeared. Flowers are grey, the sky is white, and even the rainbow is gone. Following a trail of faint color drops, the twins track down the Color Thief—a lonely cloud named Nimbus who just wanted to feel vibrant for once. Instead of punishing him, the twins teach Nimbus that sharing color makes the world brighter for everyone, including him. A touching lesson in generosity and inclusion.',
     price: 14.49,
     cover_image: '/images/book-color-thief.jpg',
