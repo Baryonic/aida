@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aida – Children's Books Author &amp; Teacher</title>
+  <meta name="description" content="Discover magical, beautifully illustrated children's books by Aida – author, teacher, and storyteller.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- NAVIGATION                                                      -->
+  <!-- ============================================================= -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="navbar__logo">Aida<span>Books</span></a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navbar__links">
+        <a href="/" class="navbar__link active">Home</a>
+        <a href="/books" class="navbar__link">Books</a>
+        <a href="/contact" class="navbar__link">Contact</a>
+        <a href="/cart" class="navbar__cart" aria-label="Shopping cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/>
+          </svg>
+          <span class="navbar__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================= -->
+  <!-- HERO SECTION                                                    -->
+  <!-- ============================================================= -->
+  <section class="hero">
+    <div class="hero__particles"></div>
+
+    <div class="hero__content anim-fade-in-up">
+      <span class="hero__badge anim-fade-in-down delay-1">✨ Author &amp; Teacher</span>
+      <h1 class="hero__title anim-fade-in-up delay-2">
+        Stories That <span data-typed="Inspire,Educate,Delight,Empower">Inspire</span><span class="typing-cursor"></span>
+      </h1>
+      <p class="hero__subtitle anim-fade-in-up delay-3">
+        Magical, beautifully illustrated children's books crafted with heart by an author who knows what young minds love—because she teaches them every day.
+      </p>
+      <div class="hero__cta anim-fade-in-up delay-4">
+        <a href="/books" class="btn btn--primary pulse">Browse Books</a>
+        <a href="/contact" class="btn btn--secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- FEATURED BOOKS CAROUSEL                                         -->
+  <!-- ============================================================= -->
+  <section class="section featured" id="featured">
+    <div class="container text-center">
+      <h2 class="section-title reveal">Featured Books</h2>
+      <p class="section-subtitle reveal">Hand-picked favourites loved by little readers everywhere</p>
+
+      <div class="carousel">
+        <div class="carousel__track stagger">
+          <!-- Populated by JS -->
+        </div>
+        <div class="carousel__dots"></div>
+        <div class="carousel__controls">
+          <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="carousel__btn carousel__btn--next" aria-label="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- ABOUT / AUTHOR TEASER                                           -->
+  <!-- ============================================================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="about-teaser">
+        <div class="about-teaser__image reveal reveal-left">
+          <div style="width:100%;height:400px;background:linear-gradient(135deg,#ffecd2,#fcb69f);display:flex;align-items:center;justify-content:center;border-radius:12px;">
+            <span style="font-family:var(--font-heading);font-size:1.4rem;color:rgba(0,0,0,.25);">Author Photo</span>
+          </div>
+          <div class="about-teaser__image-decor"></div>
+        </div>
+        <div class="about-teaser__text reveal reveal-right">
+          <h2>Meet Aida</h2>
+          <p>
+            I'm a children's-books author and primary-school teacher with over a decade of experience sparking curiosity in young minds. Every story I write begins in the classroom, inspired by the questions, laughter, and wonder of real children.
+          </p>
+          <p>
+            My books blend vibrant illustrations with heartfelt stories about courage, kindness, and the joy of discovery—because every child deserves to see themselves as the hero of their own adventure.
+          </p>
+          <a href="/books" class="btn btn--primary btn--small">Explore My Books</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- TESTIMONIALS / QUICK STATS                                      -->
+  <!-- ============================================================= -->
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="section-title reveal">Why Families Love These Books</h2>
+      <p class="section-subtitle reveal">Thousands of little readers, one big adventure</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:2rem;">
+        <div class="reveal" style="--i:0">
+          <div style="font-family:var(--font-heading);font-size:2.8rem;color:var(--color-primary);font-weight:800;">6</div>
+          <div style="color:var(--color-text-light);">Published Books</div>
+        </div>
+        <div class="reveal" style="--i:1">
+          <div style="font-family:var(--font-heading);font-size:2.8rem;color:var(--color-secondary);font-weight:800;">10k+</div>
+          <div style="color:var(--color-text-light);">Copies Sold</div>
+        </div>
+        <div class="reveal" style="--i:2">
+          <div style="font-family:var(--font-heading);font-size:2.8rem;color:var(--color-accent-dark);font-weight:800;">12</div>
+          <div style="color:var(--color-text-light);">Years Teaching</div>
+        </div>
+        <div class="reveal" style="--i:3">
+          <div style="font-family:var(--font-heading);font-size:2.8rem;color:#a29bfe;font-weight:800;">★ 4.9</div>
+          <div style="color:var(--color-text-light);">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- FOOTER                                                          -->
+  <!-- ============================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <h3>Aida<span>Books</span></h3>
+          <p>Magical stories for curious minds. Written by a teacher who believes every child is the hero of their own tale.</p>
+          <div class="footer__socials" style="margin-top:1rem;">
+            <a href="#" class="footer__social" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Twitter / X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.944 13.944 0 011.671 3.149a4.916 4.916 0 001.523 6.574 4.897 4.897 0 01-2.229-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.945 13.945 0 007.548 2.212c9.057 0 14.01-7.503 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <a href="/">Home</a>
+          <a href="/books">Books</a>
+          <a href="/cart">Cart</a>
+          <a href="/contact">Contact</a>
+        </div>
+
+        <!-- Books -->
+        <div class="footer__col">
+          <h4>Popular</h4>
+          <a href="/books">The Whispering Woods</a>
+          <a href="/books">Captain Stardust</a>
+          <a href="/books">The Garden of Words</a>
+          <a href="/books">My Teacher Is a Dragon</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@aidabooks.com">hello@aidabooks.com</a>
+          <a href="/contact">Send a Message</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 AidaBooks. All rights reserved.</span>
+        <span>Made with ♥ for young readers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/cart.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

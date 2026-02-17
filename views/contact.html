@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – AidaBooks</title>
+  <meta name="description" content="Get in touch with Aida. Send a message, ask about books, or enquire about school visits.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="navbar__logo">Aida<span>Books</span></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/books" class="navbar__link">Books</a>
+        <a href="/contact" class="navbar__link active">Contact</a>
+        <a href="/cart" class="navbar__cart" aria-label="Shopping cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/>
+          </svg>
+          <span class="navbar__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="anim-fade-in-up">Contact Me</h1>
+      <p class="anim-fade-in-up delay-2">Questions, school visits, or just saying hello—I'd love to hear from you!</p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-page">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-success">Thank you! Your message has been received.</div>
+          <div class="form-error"></div>
+
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" required maxlength="200" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="What would you like to say?" required maxlength="5000" rows="6"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+
+        <!-- Info sidebar -->
+        <div class="contact-info reveal reveal-right">
+          <h3>Let's Connect</h3>
+          <p>
+            Whether you're a parent looking for the perfect bedtime story, a teacher interested in classroom visits, or a fellow book-lover—I'm just a message away.
+          </p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:hello@aidabooks.com" style="color:var(--color-primary);">hello@aidabooks.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Location</strong><br>
+              <span style="color:var(--color-text-light);">Available worldwide (online)</span>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Response Time</strong><br>
+              <span style="color:var(--color-text-light);">Usually within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Aida<span>Books</span></h3>
+          <p>Magical stories for curious minds.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Pages</h4>
+          <a href="/">Home</a>
+          <a href="/books">Books</a>
+          <a href="/cart">Cart</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@aidabooks.com">hello@aidabooks.com</a>
+          <a href="/contact">Send a Message</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 AidaBooks. All rights reserved.</span>
+        <span>Made with ♥ for young readers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/cart.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
